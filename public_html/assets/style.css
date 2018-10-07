@@ -1,0 +1,326 @@
+html,body{
+  height: 100%;
+  margin:0px;
+  color:#3e4855;
+  font-weight: 100;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+a {
+  text-decoration: none;
+  color: #8da0aa;
+  cursor: pointer;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+button {
+  background: transparent;
+  margin-left: 15px;
+  display: inline-block;
+  border: 1px solid #d1d9dd;
+  box-shadow: none;
+  height: 30px;
+  width: 30px;
+}
+ul {
+  list-style: none;
+}
+/* main */
+div#root, div.main{
+  height: 100%;
+}
+/* header */
+header {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  z-index:2;
+  height: 60px;
+  background: -moz-linear-gradient(-65deg, #008fe2 0, #00b29c 100%);
+  background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, #008fe2), color-stop(100%, #00b29c));
+  background: -webkit-linear-gradient(-65deg, #008fe2 0, #00b29c 100%);
+  background: -o-linear-gradient(-65deg, #008fe2 0, #00b29c 100%);
+  background: -ms-linear-gradient(-65deg, #008fe2 0, #00b29c 100%);
+  background: linear-gradient(154deg, #008fe2 0, #00b29c 100%);
+}
+header div#home-img {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+header a.home {
+  display: block;
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+header a.home img{
+  height: 40px;
+  margin: 10px;
+}
+/* sidebar */
+.sidebar {
+  background: #fff;
+  position: fixed;
+  width: 250px;
+  left: 0px;
+  top: 60px;
+}
+
+.sidebar .sidebar-nav {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+.sidebar .sidebar-nav .sidebar-nav-item {
+  height: 40px;
+  padding: 0px 20px;
+  margin: 10px 5px;
+}
+
+.sidebar .sidebar-nav .sidebar-nav-item a {
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  line-height: 40px;
+}
+
+.sidebar .sidebar-nav .sidebar-nav-item:hover {
+  border: 1px solid #d1d9dd;
+}
+
+.sidebar .sidebar-nav .sidebar-nav-item .fa {
+  padding-right: 10px;
+}
+/* content */
+.content {
+  float: right;
+  background:#fafcfe;
+  position: absolute;
+  left: 250px;
+  top: 60px;
+}
+
+div.content + div {
+  padding: 15px;
+}
+/* MatchCreatePage */
+.matches-create-page a.button {
+  float: right;
+  margin: 0px 14px;
+  height: 30px;
+  line-height: 30px;
+  padding: 5px 15px;
+  border: 1px solid #d1d9dd;
+}
+.matches-create-page a.button:hover{
+  font-weight: 400;
+  border-width: 2px;
+}
+/* MatchCreatePage TeamBuilderFormContainer */
+.matches-create-page .team-builder-form-container {
+    height: 750px;
+    text-align: center;
+    display: flex;
+}
+.matches-create-page .team-builder-form-container div.team-info-block {
+    width: 50%;
+    margin: 10px;
+    height: 95%;
+    border: 1px solid #d1d9dd;
+    position: relative;
+}
+.matches-create-page .team-builder-form-container  .team-header-img {
+    border-radius: 100%;
+    margin: 15px auto;
+}
+.matches-create-page .step-change-btn {
+    height: 60px;
+}
+/*TeamBuilderForm*/
+.team-builder-form ul.all-players,
+.team-builder-form ul.team-members {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+.team-builder-form ul.all-players li,
+.team-builder-form ul.team-members li {
+  height: 35px;
+  line-height: 35px;
+}
+.team-builder-form .all-players-list .player-item {
+  display: flex;
+  margin: auto;
+  width: 200px;
+}
+.team-builder-form .all-players-list .player-item button {
+  margin:auto;
+}
+.team-builder-form ul.team-members li.member-item button {
+  background: transparent;
+  margin-left: 15px;
+  display: inline-block;
+  border: 1px solid #d1d9dd;
+  box-shadow: none;
+  height: 30px;
+  width: 30px;
+}
+.team-builder-form ul.team-members li.member-item span.player-name,
+.team-builder-form ul.all-players li.player-item span.player-name {
+  display: inline-block;
+  width: 250px;
+  line-height: 40px;
+}
+.team-builder-form .all-players-list,
+.team-builder-form .team-members-list {
+  height: auto;
+  max-height: 120px;
+  overflow-y: scroll;
+}
+.team-builder-form .all-players-list {
+  overflow: hidden;
+}
+.team-info-block a.button {
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.team-builder-form input {
+  height: 18px;
+  width: auto;
+  margin: 0px 15px;
+}
+.team-builder-form label {
+  height: 18px;
+  width: auto;
+  margin: 15px;
+}
+/*match-record-form*/
+.match-record-form span.form-label {
+  display: inline-block;
+  margin-right: 10px;
+  width: 180px;
+}
+.match-record-form div.form-group {
+  height: 50px;
+  line-height: 50px;
+  font-size: 16px;
+}
+.match-record-form div.form-group input,
+.match-record-form div.form-group select {
+  line-height: 16px;
+  font-size: 16px;
+  width: 180px;
+}
+.match-record-form .all-scores-list .score-name {
+  padding-right: 15px;
+}
+.match-record-form a.button{
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+/*MatchesSinglePage*/
+.matches-single-page {
+  height: 700px;
+  text-align: center;
+  display: flex;
+}
+.matches-single-page .match-info-block {
+  width: 50%;
+  margin: 10px;
+  height: 95%;
+  border: 1px solid #d1d9dd;
+}
+.matches-single-page .match-info-block .team-members .player-name {
+  padding-right: 10px;
+}
+/*MatchesListPage*/
+.matches-list-page ul {
+  list-style: none;
+  padding: 0px;
+  margin:0px;
+}
+/*MatchesListItem*/
+.matches-list-item {
+  padding: 0px 15px;
+  margin: 10px 0px;
+}
+.matches-list-item-title {
+  padding: 5px 15px;
+  background: #F4F4F4;
+}
+.matches-list-item-content {
+  display: flex;
+  padding: 15px;
+  background:#fff;
+}
+.matches-list-col {
+  width:33%;
+  text-align: center;
+}
+.matches-list-col img{
+  border-radius: 100%;
+}
+.score-head {
+  display: inline-block;
+  padding: 15px 15px;
+}
+.matches-list-item-score-timeline {
+  background: #fff;
+  padding:15px;
+}
+
+/*PlayersListPage*/
+.clear{
+  clear:both;
+}
+.players-list-page .player-info-grid{
+  width: 50%;
+  float:left;
+}
+.players-list-page .player-info-grid .info-grid-content {
+  margin: 8px;
+  padding: 15px;
+  background-color: #f4f4f4;
+  min-height: 350px;
+  height: auto;
+}
+.info-grid-content .info-grid-content-col {
+  float:left;
+  width: 50%;
+  height: 200px;
+}
+.info-grid-content .info-grid-content-col > div {
+  height: 100%;
+  padding: 10px;
+  text-align: center;
+}
+.info-grid-content .info-grid-content-col .player-image {
+  display: block;
+  margin: auto;
+  border-radius: 100%;
+}
+.info-grid-content select {
+  margin: 16px 0px 0px;
+  background: transparent;
+  font-size: 15px;
+  font-weight: 100;
+}
+.info-grid-content .compare-line-chart {
+  float: left;
+  width: 100%;
+}
+/* footer */
+.footer {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  text-align: center
+}
