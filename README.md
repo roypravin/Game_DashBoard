@@ -15,7 +15,7 @@ This is fully functional working Simple Application For Game Dash Board for foos
   ```
 2. Clone this repositorie
   ```
-  git clone https://github.com/LaughingKids/terem-foosball-dashboard.git
+  git clone  https://github.com/roypravin/Game_DashBoard.git
   ```
 3. Install npm necessary dependencies
   ```
